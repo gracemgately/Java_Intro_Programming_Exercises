@@ -24,9 +24,9 @@ Fizz
 FizzBuzz
 */
 
-class FizzBuzz{
+class Fizzy{
 
-    static void fizzy(int n){
+    static void fizzbuzz(int n){
         for (int i = 0; i <= n; i++){
             if (i % 15 == 0){
                 System.out.println("FizzBuzz");
@@ -47,7 +47,7 @@ class FizzBuzz{
     }
 
     public static void main(String[] args){
-        fizzy(100);
+        fizzbuzz(100);
     }
 }
 
