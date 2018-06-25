@@ -12,6 +12,9 @@ class ExerciseMain {
         System.out.println("Right: " + triangle.rightTriangle());
         System.out.println("Isosceles:" + triangle.isoscelesTriangle());
 
+        Diamond diamond = new Diamond(numAsterisksToPrint);
+        System.out.println("Centered: " + diamond.centeredDiamond());
+
 
     }
 }
