@@ -31,13 +31,27 @@ class Triangle extends Shape{
              *
             ***
            *****
-          *******
-         *********
     */
+    String isoscelesTriangle(){
+        String isoTri = "";
 
-    //line number + 2 = numasterisks
-    //n * 2 - 1 = last line
-    //num spaces to leave = n - current line num
+        for (int currentLine = 0; currentLine < this.getNumber(); currentLine++){
+
+            int numAsterisks = ((currentLine + 1) * 2 - 1);
+            Line charLine = new Line(numAsterisks);
+            String asteriskLine = charLine.horizontalLine();
+
+            int numSpaces = this.getNumber() - currentLine;
+            Line noLine = new Line(numSpaces);
+            String emptyLine = noLine.emptyHorizontalLine();
+
+
+            isoTri += "\n" + emptyLine + asteriskLine;
+
+        }
+
+        return isoTri;
+    }
 
 
 

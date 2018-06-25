@@ -10,7 +10,7 @@ class ExerciseMain {
 
         Triangle triangle = new Triangle(numAsterisksToPrint);
         System.out.println("Right: " + triangle.rightTriangle());
-
+        System.out.println("Isosceles:" + triangle.isoscelesTriangle());
 
 
     }

@@ -48,4 +48,16 @@ class Line extends Shape{
 
         return vertical;
     }
+
+    //EMPTY LINE: TBD, maybe refactor line functions to take argument to
+    //tell which character to repeat in the line
+    String emptyHorizontalLine(){
+        String emptyHorizontal = "";
+
+        for (int numAsterisks = this.getNumber(); numAsterisks > 0; numAsterisks--){
+            emptyHorizontal += " ";
+        }
+
+        return emptyHorizontal;
+    }
 }
