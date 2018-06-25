@@ -1,4 +1,4 @@
-public class Shape{
+class Shape{
 
     private int number;
     Shape(int n){
