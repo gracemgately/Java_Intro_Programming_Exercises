@@ -2,6 +2,7 @@ class ExerciseMain {
     public static void main(String[] args){
         //taking number n from command-line arguments
         int numAsterisksToPrint = Integer.parseInt(args[0]);
+        String nameToPrint = args[1];
 
         Line line = new Line(numAsterisksToPrint);
         System.out.println("Single: " + line.singleAsterisk());
@@ -14,6 +15,7 @@ class ExerciseMain {
 
         Diamond diamond = new Diamond(numAsterisksToPrint);
         System.out.println("Centered: " + diamond.centeredDiamond());
+        System.out.println("Name:" + diamond.namedDiamond(nameToPrint));
 
 
     }

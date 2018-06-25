@@ -42,4 +42,12 @@ class Diamond extends Shape{
            ***
             *
     */
+    String namedDiamond(String name){
+        String wholeDiamond = this.centeredDiamond();
+        String diamondArr[] = wholeDiamond.split("\n");
+        int center = (int) Math.round(diamondArr.length / 2);
+
+        diamondArr[center] = " " + name;
+        return String.join("\n", diamondArr);
+    }
 }
