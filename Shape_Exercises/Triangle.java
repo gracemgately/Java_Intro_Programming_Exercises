@@ -1,6 +1,6 @@
 //More Triangle Exercises
 
-class Triangle extends Line{
+class Triangle extends Shape{
 
     Triangle(int n){
         super(n);

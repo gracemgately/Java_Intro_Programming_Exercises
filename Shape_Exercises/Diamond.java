@@ -1,6 +1,6 @@
 //Diamond Exercises
 
-class Diamond extends Triangle{
+class Diamond extends Shape{
 
     Diamond(int n){
         super(n);
